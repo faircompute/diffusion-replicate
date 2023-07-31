@@ -1,0 +1,11 @@
+build:
+  gpu: true
+  system_packages:
+    - "libgl1-mesa-glx"
+    - "libglib2.0-0"
+  python_version: "3.10"
+  python_packages:
+    - "torch==1.13.1"
+    - "accelerate==0.20.3"
+    - "diffusers==0.17.1"
+predict: "app.py:Predictor"
